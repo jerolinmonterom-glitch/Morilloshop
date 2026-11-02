@@ -1,0 +1,173 @@
+:root {
+  --cyber-bg: #0b0d17;
+  --cyber-darker: #05070e;
+  --cyber-card: #121629;
+  --cyber-cyan: #00f0ff;
+  --cyber-magenta: #ff007f;
+  --cyber-purple: #7000ff;
+  --text-main: #e0e6ed;
+}
+
+body {
+  background-color: var(--cyber-bg);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+}
+
+.brand-font {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+}
+
+.bg-cyber-dark {
+  background-color: var(--cyber-card) !important;
+}
+
+.bg-cyber-darker {
+  background-color: var(--cyber-darker) !important;
+}
+
+.text-cyber-cyan {
+  color: var(--cyber-cyan) !important;
+}
+
+.text-cyber-magenta {
+  color: var(--cyber-magenta) !important;
+}
+
+.text-cyber-gradient {
+  background: linear-gradient(135deg, var(--cyber-cyan), var(--cyber-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Botones Neon */
+.btn-cyber-cyan {
+  background: linear-gradient(135deg, var(--cyber-cyan), var(--cyber-purple));
+  color: #000;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-cyber-cyan:hover {
+  background: linear-gradient(135deg, var(--cyber-purple), var(--cyber-cyan));
+  color: #fff;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+}
+
+.btn-outline-cyan {
+  border: 1px solid var(--cyber-cyan);
+  color: var(--cyber-cyan);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-cyan:hover, .btn-outline-cyan.active {
+  background: var(--cyber-cyan);
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+
+.btn-cyber-magenta {
+  background: linear-gradient(135deg, var(--cyber-magenta), var(--cyber-purple));
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+}
+
+.btn-cyber-magenta:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 127, 0.7);
+  color: #fff;
+}
+
+.bg-magenta {
+  background-color: var(--cyber-magenta) !important;
+}
+
+/* Cards de productos */
+.product-card {
+  background: var(--cyber-card);
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--cyber-cyan);
+  box-shadow: 0 10px 25px rgba(0, 240, 255, 0.25);
+}
+
+.product-img-container {
+  height: 220px;
+  background: #ffffff;
+  border-radius: 12px 12px 0 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Perfil Vendedora */
+.seller-card {
+  background: linear-gradient(145deg, rgba(18, 22, 41, 0.9), rgba(5, 7, 14, 0.95));
+  border: 1px solid rgba(255, 0, 127, 0.3);
+  box-shadow: 0 0 30px rgba(112, 0, 255, 0.2);
+}
+
+.seller-avatar-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.seller-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--cyber-darker);
+  border: 3px solid var(--cyber-cyan);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  overflow: hidden;
+}
+
+.seller-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-glow {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--cyber-cyan), var(--cyber-magenta), var(--cyber-purple));
+  z-index: 1;
+  filter: blur(10px);
+  opacity: 0.7;
+}
+
+/* Modales */
+.border-cyber-cyan {
+  border: 1px solid var(--cyber-cyan) !important;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+}
+
+.border-cyber-magenta {
+  border: 1px solid var(--cyber-magenta) !important;
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.3);
+}
